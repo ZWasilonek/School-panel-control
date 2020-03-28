@@ -36,5 +36,3 @@ CREATE TABLE solutions(
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (exercise_id) REFERENCES exercises(id)
 );
-
-SHOW tables;
