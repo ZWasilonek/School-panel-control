@@ -1,6 +1,7 @@
 package pl.codelearn.dao;
 
 import pl.codelearn.model.Solution;
+import pl.codelearn.util.DBUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

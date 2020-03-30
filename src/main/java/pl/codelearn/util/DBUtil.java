@@ -1,4 +1,4 @@
-package pl.codelearn.dao;
+package pl.codelearn.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,14 +6,17 @@ import java.sql.SQLException;
 
 public class DBUtil {
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/";
-    private static final String DB_PARAMS = "?useSSL=false&characterEncoding=utf8";
-    private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "coderslab";
+    //Here add jdbc string for mysql - for example (set the database name)
+    //jdbc:mysql://localhost:3306/db_name?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    private static final String DB_URL = "SOME CONNECTION STRING";
+    //specify user
+    private static final String DB_USER = "";
+    //specify pass
+    private static final String DB_PASS = "";
 
-    //jdbc:mysql://localhost:3306/ + dbName + ?useSSL=false&characterEncoding=utf8
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(DB_URL + "codeschool" + DB_PARAMS, DB_USER, DB_PASSWORD);
+        return DriverManager.getConnection(DB_URL, DB_USER, DB_PASS);
     }
 
 }
+

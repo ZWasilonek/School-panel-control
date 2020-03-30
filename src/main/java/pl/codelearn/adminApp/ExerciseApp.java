@@ -1,4 +1,4 @@
-package pl.codelearn.admin;
+package pl.codelearn.adminApp;
 
 import pl.codelearn.model.Exercise;
 import pl.codelearn.dao.ExerciseDao;

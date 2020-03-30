@@ -1,4 +1,4 @@
-package pl.codelearn.UserApp;
+package pl.codelearn.userApp;
 
 import pl.codelearn.dao.UserDao;
 import pl.codelearn.dao.SolutionDao;
